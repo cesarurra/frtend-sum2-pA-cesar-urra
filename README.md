@@ -1,0 +1,8 @@
+Sistema de Reservas - ViajarYa
+El proyecto consistió en el desarrollo integral de un módulo frontend interactivo y adaptable para la gestión de solicitudes de viajes de la agencia ViajarYa, estructurado en tres etapas de desarrollo:
+
+Maquetación Semántica (HTML5): Se diseñó un formulario estructurado en cuatro secciones lógicas (Datos del Viaje, Datos de los Pasajeros, Preferencias y Confirmación). Se implementaron etiquetas semánticas y controles de formulario avanzados (selects encadenados, radio buttons, checkboxes y textareas) garantizando accesibilidad y una base sólida para el diseño.
+
+Diseño Adaptable (CSS3): Se aplicó una arquitectura visual moderna utilizando CSS Grid y Flexbox. El formulario cuenta con una distribución de dos columnas en pantallas de escritorio que se transforma de forma fluida en una sola columna para dispositivos móviles (Mobile First). Se añadieron estilos interactivos de enfoque (focus), sombras suaves y clases de estado (éxito y error) para mejorar la experiencia de usuario.
+
+Lógica e Interactividad (JavaScript Nativo): Mediante código JS Vanilla (sin librerías externas), se programó la visibilidad condicional de campos en tiempo real y un contador dinámico de caracteres con alertas cromáticas. Además, se implementó un sistema robusto de validación del lado del cliente con expresiones regulares (RegEx) y cálculo de fechas, el cual detiene el envío ante campos inválidos, realiza un desplazamiento automático (scroll) al primer error e inyecta dinámicamente una pantalla de confirmación con un número de solicitud aleatorio tras un registro exitoso.
