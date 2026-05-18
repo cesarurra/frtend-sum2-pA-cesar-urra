@@ -1,0 +1,100 @@
+Prompt enviado al asistente de IA:
+
+"Necesito desarrollar e integrar la Etapa 3 (Validación e Interactividad Avanzada) para el sistema de reservas de la agencia de viajes ViajarYa. El objetivo es programar el archivo validaciones.js utilizando JavaScript Nativo (Vanilla JS) bajo un enfoque de desarrollo limpio, modular y sin dependencias externas, asegurando una experiencia de usuario fluida (UX) y la integridad de los datos en el cliente.
+
+El script debe cubrir con precisión arquitectónica los siguientes bloques funcionales:
+Manipulación Dinámica del DOM y Visibilidad Condicional: Implementar escuchadores de eventos (change) optimizados para controlar la visibilidad de secciones condicionales (como la especificación de puertos alternativos, desglose de adultos mayores y requerimientos especiales). Al ocultarse, el sistema debe limpiar automáticamente los valores e invalidar sus estados de error previos para evitar污染 (contaminación) de datos.
+
+Feedback en Tiempo Real y Alertas Cromáticas: Configurar un colector de eventos input en el área de comentarios que calcule la extensión del texto en tiempo real. Debe aplicar un umbral de advertencia visual modificando el color del contador: gris por defecto, naranja al superar el 80% (240 caracteres) y rojo restrictivo al alcanzar el límite estricto de 300 caracteres.
+
+Motor de Validación con Expresiones Regulares (RegEx) y Lógica Temporal: Construir reglas de validación severas para el evento submit que incluyan:Filtros de Sanitización y Patrones: Validación alfanumérica para documentos (7-12 caracteres), restricciones alfabéticas estrictas para nombres (5-80 caracteres), consistencia de formato estándar para emails y un mínimo de 8 dígitos numéricos reales para campos telefónicos.Lógica de Negocio basada en Fechas: Validar dinámicamente que la fecha de salida sea posterior a un margen mínimo de 7 días desde el tiempo actual ($t+7$), asegurar que el regreso sea estrictamente cronológico posterior a la salida, y calcular de forma exacta la mayoría de edad ($\ge 18$ años) del pasajero principal en base a su fecha de nacimiento.
+
+Gestión de Errores, Accesibilidad y Control de Scroll: Ante la presencia de datos inválidos, interceptar el envío con preventDefault(), realizar un escaneo secuencial para determinar el volumen total de errores e inyectar un componente de alerta general en la cabecera. Cada campo inválido debe recibir la clase campo-error de forma aislada junto a un mensaje dinámico inyectado en el DOM, aplicando inmediatamente un desplazamiento suave (scrollIntoView) focalizado en el primer elemento conflictivo detectado.
+
+Ciclo de Confirmación y Reset Completo del Estado: Si la validación es exitosa, se debe conmutar la visibilidad de la interfaz para ocultar el formulario y renderizar dinámicamente una pantalla de confirmación optimizada. Esta debe mostrar un resumen estructurado con los datos clave del viaje y un identificador único de transacción generado algorítmicamente mediante Math.random(). Asimismo, se debe programar el evento de reinicio para restaurar por completo el estado del formulario, contadores, vistas condicionales y clases de validación (campo-ok / campo-error).
+
+Por favor, provee el código fuente estructurado limpiamente, junto con las modificaciones semánticas obligatorias que deba aplicar en el archivo reserva.html para garantizar el correcto anclaje de los scripts y de los nodos inyectados por JavaScript."
+
+aqui se mostraran los commit hechos : git commit -m "etapa1: estructura general del formulario y secciones semanticas"
+
+git commit -m "etapa1: implementacion de controles avanzados select de destino y tipo de paquete"
+    ```
+*   **Commit 3**
+ 
+   git commit -m "etapa1: configuracion de campos de pasajeros datos de contacto y validacion nativa html5"  ```
+
+---
+
+### Etapa 2: Diseño Adaptable y Estilos (CSS3)
+*   **Commit 1**
+    
+```bash
+    git commit -m "etapa2: configuracion de arquitectura base contenedores y tipografia global"
+    ```
+*   **Commit 2**
+    
+```bash
+    git commit -m "etapa2: implementacion de css grid a dos columnas y responsive design adaptativo"
+    ```
+*   **Commit 3**
+    
+```bash
+    git commit -m "etapa2: estilos interactivos de enfoque pseudo clases y estados de error o exito"
+    ```
+
+---
+
+### Etapa 3: Lógica e Interactividad (JavaScript Vanilla)
+*   **Commit 1**
+    
+```bash
+    git commit -m "etapa3: interactividad en tiempo real y control de visibilidad condicional"
+    ```
+*   **Commit 2**
+    
+```bash
+    git commit -m "etapa3: logica de validacion nativa por secciones y expresiones regulares"
+    ```
+*   **Commit 3**
+    
+```bash
+    git commit -m "etapa3: gestion de envio scroll automatico y renderizado de pantalla de confirmacion"
+    ```
+tambien se hicieron consultas como:PS C:\Users\aft_lab320\Desktop\prueba> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   reserva.css
+        modified:   reserva.html
+        modified:   style.css
+
+:PS C:\Users\aft_lab320\Desktop\prueba> git add .
+PS C:\Users\aft_lab320\Desktop\prueba> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   reserva.css
+        modified:   reserva.html
+        modified:   style.css
+        new file:   validaciones.js
+
+
+PS C:\Users\aft_lab320\Desktop\prueba> git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        reserva.css
+        reserva.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\aft_lab320\Desktop\prueba> git add reserva.css
+PS C:\Users\aft_lab320\Desktop\prueba> git add reserva.html
+PS C:\Users\aft_lab320\Desktop\prueba> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   reserva.css
+        new file:   reserva.html
