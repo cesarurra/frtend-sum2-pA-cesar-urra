@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajarYa - Agencia de Turismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="main-header">
+        <div class="logo">ViajarYa</div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#servicios">Paquetes</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="reserva.html" class="btn-nav">Reservar</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>ViajarYa</h1>
+                <p>Tu próxima gran aventura comienza aquí. Descubre el mundo con expertos.</p>
+                
+                <!-- Buscador Visual -->
+                <form action="reserva.html" class="search-box">
+                    <div class="input-group">
+                        <label for="destino">Destino</label>
+                        <input type="text" id="destino" placeholder="¿A dónde quieres ir?">
+                    </div>
+                    <div class="input-group">
+                        <label for="fecha">Fecha de salida</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <div class="input-group">
+                        <label for="pasajeros">Pasajeros</label>
+                        <input type="number" id="pasajeros" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn-search">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- DESTINOS DESTACADOS -->
+        <section id="destinos" class="section-container">
+            <h2 class="section-title">Destinos Destacados</h2>
+            <div class="grid-destinos">
+                <!-- Tarjeta 1 -->
+                <article class="card-destino">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Playa paradisíaca">
+                    <div class="card-content">
+                        <h3>Caribe Tropical</h3>
+                        <p>Disfruta de playas de arena blanca y aguas cristalinas. El destino perfecto para desconectar del mundo y relajarte bajo el sol.</p>
+                        <span class="price">Desde USD 890</span>
+                        <a href="#" class="btn-card">Ver paquetes</a>
+                    </div>
+                </article>
+                <!-- Tarjeta 2 -->
+                <article class="card-destino">
+                    <img src="https://images.unsplash.com/photo-1491555103943-7c647fd45fec?auto=format&fit=crop&w=500&q=80" alt="Montañas y lagos">
+                    <div class="card-content">
+                        <h3>Patagonia Argentina</h3>
+                        <p>Explora glaciares majestuosos y senderos rodeados de la naturaleza más pura. Ideal para los amantes del trekking y la aventura.</p>
+                        <span class="price">Desde USD 1,200</span>
+                        <a href="#" class="btn-card">Ver paquetes</a>
+                    </div>
+                </article>
+                <!-- Tarjeta 3 -->
+                <article class="card-destino">
+                    <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=500&q=80" alt="Ciudad de Tokio">
+                    <div class="card-content">
+                        <h3>Tokio Futurista</h3>
+                        <p>Una mezcla impresionante de templos antiguos y rascacielos llenos de luces de neón. Descubre una cultura gastronómica única.</p>
+                        <span class="price">Desde USD 2,450</span>
+                        <a href="#" class="btn-card">Ver paquetes</a>
+                    </div>
+                </article>
+                <!-- Tarjeta 4 -->
+                <article class="card-destino">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" alt="Torre Eiffel París">
+                    <div class="card-content">
+                        <h3>París Romántico</h3>
+                        <p>Camina por las avenidas de la ciudad de la luz, visita museos icónicos y disfruta de la mejor pastelería del mundo entero.</p>
+                        <span class="price">Desde USD 1,650</span>
+                        <a href="#" class="btn-card">Ver paquetes</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- TIPOS DE SERVICIOS -->
+        <section id="servicios" class="section-container bg-light">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="grid-servicios">
+                <div class="servicio-item">
+                    <div class="servicio-icon">🏨</div>
+                    <h3>Paquetes Todo Incluido</h3>
+                    <p>Hoteles, comidas y excursiones programadas para que solo te preocupes por disfrutar.</p>
+                </div>
+                <div class="servicio-item">
+                    <div class="servicio-icon">🚢</div>
+                    <h3>Cruceros</h3>
+                    <p>Recorre múltiples destinos a bordo de hoteles flotantes de máximo lujo y diversión.</p>
+                </div>
+                <div class="servicio-item">
+                    <div class="servicio-icon">🎓</div>
+                    <h3>Viajes de Egresados</h3>
+                    <p>La mejor experiencia de fin de curso con seguridad, coordinación constante y fiestas exclusivas.</p>
+                </div>
+                <div class="servicio-item">
+                    <div class="servicio-icon">🧗</div>
+                    <h3>Turismo de Aventura</h3>
+                    <p>Rafting, paracaidismo y rutas extremas para los viajeros que buscan desafiar sus límites.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section class="section-container">
+            <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+            <div class="grid-testimonios">
+                <blockquote class="testimonio-item">
+                    <p class="comentario">"El viaje a la Patagonia superó todas mis expectativas. La organización fue impecable desde el primer día."</p>
+                    <cite class="autor">- Carlos Mendoza</cite>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </blockquote>
+                <blockquote class="testimonio-item">
+                    <p class="comentario">"Reservar el crucero familiar fue super sencillo. La atención personalizada nos ayudó a elegir el mejor camarote."</p>
+                    <cite class="autor">- Ana María Silva</cite>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </blockquote>
+                <blockquote class="testimonio-item">
+                    <p class="comentario">"Fuimos de viaje de egresados con mi curso y la pasamos genial. Los coordinadores un 10."</p>
+                    <cite class="autor">- Lucas Gómez</cite>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- POR QUÉ ELEGIRNOS -->
+        <section id="nosotros" class="section-container bg-light">
+            <h2 class="section-title">¿Por qué elegir ViajarYa?</h2>
+            <div class="grid-beneficios">
+                <div class="beneficio-item">
+                    <h3>10 Años de Experiencia</h3>
+                    <p>Una década creando momentos inolvidables y asesorando a viajeros exigentes.</p>
+                </div>
+                <div class="beneficio-item">
+                    <h3>Atención Personalizada</h3>
+                    <p>Soporte las 24 horas del día, los 7 días de la semana, durante todo tu itinerario.</p>
+                </div>
+                <div class="beneficio-item">
+                    <h3>Mejor Precio Garantizado</h3>
+                    <p>Alianzas directas con aerolíneas y cadenas hoteleras para ofrecerte tarifas únicas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h3>ViajarYa</h3>
+                <p>Tu próxima gran aventura comienza aquí.</p>
+                <p class="copyright">&copy; 2026 ViajarYa. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <a href="index.html">Inicio</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#servicios">Paquetes</a>
+                <a href="#nosotros">Nosotros</a>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p>📧 contacto@viajarya.com</p>
+                <p>📞 +56 2 2345 6789</p>
+                <p>💬 WhatsApp: +56 9 8765 4321</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
